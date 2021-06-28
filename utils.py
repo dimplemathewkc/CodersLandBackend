@@ -21,7 +21,7 @@ class RunCode(object):
         return result
 
     def run_code(self, code=None):
-        file = '.resource/code.py'
+        file = 'coderLand/resource/code.py'
         # /Users/dimplemathew/PycharmProjects/coderLand/coderLand/resource
         if not code:
             code = self.code
