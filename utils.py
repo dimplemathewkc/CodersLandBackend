@@ -21,11 +21,12 @@ class RunCode(object):
         return result
 
     def run_code(self, code=None):
-        file = 'coderLand/resource/code.py'
-        # /Users/dimplemathew/PycharmProjects/coderLand/coderLand/resource
+        file = "coderLand/resource/code.py"
+            # 'coderLand/resource/code.py'
+        # "/Users/dimplemathew/PycharmProjects/coderLand/coderLand/resource"
         if not code:
             code = self.code
         with open(file,"w") as f:
             f.write(code)
         self._run_code(file)
-        return self.stderr,self.stdout
+        return self.stderr, self.stdout
